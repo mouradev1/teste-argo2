@@ -15,7 +15,7 @@ spec:
         app: moura
     spec:
       containers:
-      - name: nginx
+      - name: moura-app
         image: mouralol23/app-moura
         ports:
         - containerPort: 80
