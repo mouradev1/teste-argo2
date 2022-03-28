@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: moura-app
-        image: mouralol23/app-moura
+        image: mouralol23/app-moura:latest
         ports:
         - containerPort: 80
