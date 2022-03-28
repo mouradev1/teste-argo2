@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: moura-app
+  labels:
+    app: moura
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: moura
+  template:
+    metadata:
+      labels:
+        app: moura
+    spec:
+      containers:
+      - name: nginx
+        image: mouralol23/app-moura
+        ports:
+        - containerPort: 80
